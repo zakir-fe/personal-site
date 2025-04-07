@@ -8,8 +8,8 @@ import Skills from "@/components/sections/Skills"
 import Blog from "@/components/sections/Blog"
 import Contact from "@/components/sections/Contact"
 import Corporation from "@/components/sections/Corporation"
-import Experience from "@/components/sections/Experience"
 import Education from "@/components/sections/Education"
+import Experience from "@/components/sections/Experience"
 export default function Page() {
 
 	return (
@@ -17,13 +17,13 @@ export default function Page() {
 			<Layout >
 				<Home />
 				<Static />
-				<Corporation />
-				<Service />
-				<Experience />
+				{/* <Corporation /> */}
 				<Education />
-				<Projects />
+				<Experience />
 				<Skills />
-				<Blog />
+				<Service />
+				<Projects />
+				{/* <Blog /> */}
 				<Contact />
 			</Layout>
 		</>
