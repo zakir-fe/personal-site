@@ -77,7 +77,7 @@ export default function Experience2() {
 									<div className="col-lg-4">
 										<div className="d-flex flex-column gap-2">
 										{experiences.map((exp, index) => (
-											<div
+											<div key={index}
 											className='technology border border-1 rounded-3 p-3 d-block '
 											role="button"
 											onClick={() => handleToggle(index)}
@@ -95,7 +95,7 @@ export default function Experience2() {
 									</div>
 									{experiences.map((exp, index) => (
 										activeIndex === index && (
-											<div className="col-lg-8 ps-lg-5 mt-5 mt-lg-0">
+											<div className="col-lg-8 ps-lg-5 mt-5 mt-lg-0" key={index}>
 												<h6 className="text-linear-4">{exp.title}</h6>
 												<ul className="mt-4">
 													{exp.description.map((item, i) => (
